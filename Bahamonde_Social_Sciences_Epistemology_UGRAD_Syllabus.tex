@@ -25,7 +25,7 @@
 \usepackage[sc,osf]{mathpazo}
 
 % Set your name here
-\def\name{Introduction to Social Sciences and Social Epistemology}
+\def\name{Social Sciences and Epistemology}
 
 % Replace this with a link to your CV if you like, or set it empty
 % (as in \def\footerlink{}) to remove the link in the footer:
@@ -92,16 +92,25 @@
 %%% bib begin
 \usepackage[american]{babel}
 \usepackage{csquotes}
-\usepackage[backend=biber,style=authoryear,dashed=false,doi=false,isbn=false,url=false,eprint=false]{biblatex}
-%\DeclareLanguageMapping{american}{american-apa}
+%\usepackage[style=chicago-authordate,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+
+\usepackage[authordate,isbn=false,doi=false,url=false,eprint=false]{biblatex-chicago}
+\DeclareFieldFormat[article]{title}{\mkbibquote{#1}} % make article titles in quotes
+\DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}} % make theses italics
+
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}}
+
 \addbibresource{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/library.bib} 
 \addbibresource{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/Bahamonde_BibTex2013.bib} 
+
 % USAGES
 %% use \textcite to cite normal
 %% \parencite to cite in parentheses
 %% \footcite to cite in footnote
 %% the default can be modified in autocite=FOO, footnote, for ex. 
 %%% bib end
+
 
 
 
@@ -127,7 +136,7 @@
   \begin{tabular}{ll}
 {\bf Last updated}: \today. \\
  {\bf Download last version} \href{https://github.com/hbahamonde/Comparative_Politics_UGRAD/raw/master/Bahamonde_Comparative_Politics_Syllabus_UGRAD.pdf}{here}.\\
-  % {\bf {\color{red}{\scriptsize Not intended as a definitive version}}} %\\
+   {\bf {\color{red}{\scriptsize Not intended as a definitive version}}} %\\
     \\
     \\
     \\
@@ -209,7 +218,7 @@ Upon successful completion of this course, you will be able to:
 	\item {\bf A research design of 10-12 pages in length, \underline{{\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/date_design.txt}\unskip}}}: {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/percentage_design.txt}\unskip}\%.
 	\\ 
 	\\
-	In this exercise, you and your group (up to 5 people, {\color{red}depending on the size of the class}) should produce a research design paper that focuses on an specific topic in the social sciences. Please consult with me in advance what your thematic options are. Do not write your paper without first double-checking with me if the topic is appropriate. For those matters, please \href{https://calendly.com/bahamonde/officehours}{make an appointment} with me. Importantly, the paper should use at least three different methods discussed in the course.
+	In this exercise, \underline{you and your group} (up to 5 people, {\color{red}depending on the size of the class}) should produce a research design paper that focuses on an specific topic in the social sciences. Please consult with me in advance what your thematic options are. Do not write your paper without first double-checking with me if the topic is appropriate. For those matters, please \href{https://calendly.com/bahamonde/officehours}{make an appointment} with me. Importantly, the paper should use at least three different methods discussed in the course.
 
 	\begin{itemize}
 	\item[\Pointinghand] {\bf While the project should be about a social phenomena, and using the approaches taught in this course, {\color{blue}you should work on aspects that touch upon our regional} (i.e. \emph{Regi\'on de O\'\unskip Higgins}) {\color{blue}context, challenges, advantages, needs, or what not.}}
