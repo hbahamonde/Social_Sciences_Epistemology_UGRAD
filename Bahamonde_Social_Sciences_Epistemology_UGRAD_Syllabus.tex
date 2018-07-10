@@ -12,6 +12,29 @@
 \documentclass[letterpaper]{article}
 
 \usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=true,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=blue,          % color of internal links (change box color with linkbordercolor)
+    citecolor=blue,        % color of links to bibliography
+    filecolor=blue,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+
+
 \usepackage{geometry}
 \usepackage{import} % To import email.
 \usepackage{marvosym} % face package
@@ -150,10 +173,20 @@
 %\texttt{e:}\href{mailto:hbahamonde@tulane.edu}{\texttt{hbahamonde@tulane.edu}}\\
 \texttt{e:}\href{mailto:\filetext}{\texttt{\filetext}}\\
 \texttt{w:}\href{http://www.hectorbahamonde.com}{\texttt{www.hectorbahamonde.com}}\\
-{\bf Class meetings}: \texttt{Days} {\color{red}Time here}.\\
-{\bf Location}: {\color{red}Classroom here}.\\
 {\bf Office Hours}: Make an appointment \href{https://calendly.com/bahamonde/officehours}{\texttt{here}}.\\
+
+\vspace{1mm}
+{\bf Class meetings}: \texttt{M,\unskip W}: {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/time_class_begins.txt}\unskip}-{\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/time_class_ends.txt}\unskip}.\\
+{\bf Class Location}: {\color{red}Classroom here}.\\
 {\bf Class Website and Materials}: \href{www.HectorBahamonde.com}{\texttt{Piazza}}.
+
+\vspace{0.5cm}
+{\bf Teaching Assistant}: {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/ta_name.txt}\unskip}.\\
+\texttt{e:}\href{mailto:ghbarria@uc.cl}{\texttt{ghbarria@uc.cl}}\\
+{\bf Recitation meetings}: Every {\color{red}{\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/recitation_day.txt}\unskip}, Time?}.\\
+{\bf Recitation Location}: {\color{red}Classroom here}.\\
+
+
 
 \subsection*{Overview and Objectives}
 
@@ -178,10 +211,11 @@ Upon successful completion of this course, you will be able to:
  
 
 \begin{itemize}
-	\item[$\bullet$] Please, do not eat during class. Beverages are fine.
+	\item[$\bullet$] Don't be late. The classroom's door will be locked after 15 minutes the class has began.
+	\item[$\bullet$] Do not eat during class. Beverages are fine.
 	\item[$\bullet$] No computers, phones, or any other electronic devices may be used in lecture for any reason---no exceptions. Any such devices on your person must be off (e.g., not merely on silent) and put completely away. Those who do not respect this requirement will be asked to leave the class.
 	\item[$\bullet$] Attendance is mandatory (and part of your participation grade). If you missed a class, please get the notes from another student. I do not offer make up sessions for students who are absent.
-	\item[$\bullet$] Please, follow the `Email Etiquette' I have \href{http://www.hectorbahamonde.com/resources/}{posted} in my website.
+	\item[$\bullet$] Please, follow the ``Email Etiquette'' I have \href{http://www.hectorbahamonde.com/resources/}{posted} on my website.
 \end{itemize}
 
 
@@ -194,14 +228,18 @@ Upon successful completion of this course, you will be able to:
 	\item {\bf Readings, Participation, Attendance and Pop quizzes}: {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/percentage_participation.txt}\unskip}\%.
 	\\
 	\\
-	I expect you to keep up with the readings over the course of the semester. I employ an interactive lecture style, and you will need to have done the readings in order to participate. There will be a number of pop quizzes during the semester.  Quizzes will be short (3-5 minutes), completed at any point of the class, and designed to make sure everyone is keeping up with the readings and lecture. There will be no make-up quizzes. If you are absent (or late) from class that day, you will get a $0$ on that quiz. 
+	The TA and myself expect you to keep up with the readings over the course of the semester. We employ an interactive lecture style, and you will need to have done the readings before class in order to participate. Full attendance does not imply full credit. Besides attendance, you will also need to \emph{actively} participate in my class, and in recitation, to get full credit.
+\\
+\\	
+	There will be a number of pop quizzes during the semester, both in lecture \emph{and} recitation. Quizzes will be short (3-5 minutes), completed at any point of the class, and designed to make sure everyone is keeping up with the readings and lecture. There will be no make-up quizzes. If you are absent (or late) from class that day, you will get a $0$ on that quiz. 
 	%\\
 	%\\
 	% 3 credits
 	%Students are expected to put in 90 hours of work during the semester for a 3-credit class. That represents 5 hours per week, in a semester of 18 weeks. These are \emph{Universidad de O\'\unskip Higgins}'s guidelines. Since you will be spending 1.5 hours in the classroom, this means you should be working about 3.5 hours per week for this course {\bf outside} of the classroom. If you find that you are spending more than that, please see me in my office hours to discuss strategies to read more efficiently. 
-	
+	\\
+	\\
 	% 6 credits
-	Students are expected to put in 180 hours of work during the semester for a 6-credit class. That represents 10 hours per week, in a semester of 18 weeks. These are \emph{Universidad de O\'\unskip Higgins}'s guidelines. Since you will be spending 3 hours in the classroom, this means you should be working about 7 hours per week for this course {\bf outside} of the classroom. If you find that you are spending more than that, please see me in my office hours to discuss strategies to read more efficiently. 
+	Students are expected to put in 180 hours of work during the semester for a 6-credit class. That represents 10 hours per week, in a semester of 18 weeks. These are \emph{Universidad de O\'\unskip Higgins}'s guidelines. Since you will be spending 3 hours in the classroom, this means you should be working about 7 hours per week for this course {\bf outside} of the classroom. Since recitation lasts for 1.5 hours, that means that you should be {\bf reading} 5.5 hours per week. If you find that you are spending more than that, please see me in my office hours to discuss strategies to read more efficiently. 
 
 
 	% midterm
@@ -211,7 +249,7 @@ Upon successful completion of this course, you will be able to:
 	You must take the exam at the scheduled time. There will be no make-ups, unless you have a documented medical excuse. (Documented) Medical excuses are the only type of exceptions that will be accepted.
 	\\
 	\\
-	The exam will be a closed-book exam, covering material from the entire semester, {\bf up to {\color{red}DATE}}. The format of the exam will be discussed on {\color{red}DATE}. Please note, exam questions will be drawn \emph{both} from the readings \emph{and} lectures.
+	The exam will be a closed-book exam, covering material from the entire semester, {\bf up to {\color{red}DATE}}. The format of the exam will be discussed on {\color{red}DATE}. Please note, exam questions will be drawn from the readings \emph{and} lectures \emph{and} recitation.
 
 
 	% design
@@ -224,16 +262,16 @@ Upon successful completion of this course, you will be able to:
 	\item[\Pointinghand] {\bf While the project should be about a social phenomena, and using the approaches taught in this course, {\color{blue}you should work on aspects that touch upon our regional} (i.e. \emph{Regi\'on de O\'\unskip Higgins}) {\color{blue}context, challenges, advantages, needs, or what not.}}
 	\end{itemize}
 
-	I take writing very seriously. I therefore strongly suggest that you begin your paper early, edit multiple drafts, and proofread carefully before turning it in. Grammar, diction, and style, all shape the effectiveness of your writing and, as a result, will affect your grade. Consult William Strunk, Jr., and E. B. White, \href{http://www.jlakes.org/ch/web/The-elements-of-style.pdf}{\emph{The Elements of Style}}, for helpful hints regarding written expression. Joseph M. Williams and Gregory G. Colomb, \href{http://sir.spbu.ru/en/programs/master/master_program_in_international_relations/digital_library/Book%20Research%20seminar%20by%20Booth.pdf}{\emph{The Craft of Argument}} (New York: Longman, 2003), provides an excellent overview of the art of effective persuasive writing. 
+	I take writing very seriously. I therefore strongly suggest that you begin your paper early, edit multiple drafts, and proofread it carefully before turning it in. Grammar, diction, and style, all shape the effectiveness of your writing and, as a result, will affect your grade. Consult William Strunk, Jr., and E. B. White, \href{http://www.jlakes.org/ch/web/The-elements-of-style.pdf}{\emph{The Elements of Style}}, for helpful hints regarding written expression. Joseph M. Williams and Gregory G. Colomb, \href{http://sir.spbu.ru/en/programs/master/master_program_in_international_relations/digital_library/Book%20Research%20seminar%20by%20Booth.pdf}{\emph{The Craft of Argument}} (New York: Longman, 2003), provides an excellent overview of the art of effective persuasive writing. 
 	\\ \phantom{\textcite{Strunk1999,Booth2003}}
 	\\
 	On {\bf {\color{red}DATE}} we will discuss Barry Weingast's \href{https://web.stanford.edu/group/mcnollgast/cgi-bin/wordpress/wp-content/uploads/2013/10/CALTECH.RUL_..pdf}{Caltech Rules for Writing Papers: How to Structure your Paper and Write an Introduction}, 2010. This short piece will provide important guidance in writing an effective and well-structured paper.
 	\\ \phantom{\textcite{Weingast2010}}
 	\\
-	The paper is due in hard copy at the beginning of class, and no later than {\color{red}TIME} on {\bf {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/date_design.txt}\unskip}}. This assignment covers material from the entire semester, up to {\bf {\color{red}Date}}. Turning it in before the due date is OK, but \emph{not} afterwards. {\bf Late papers will not be accepted, and will be graded with a 0}. There will \emph{not} be exceptions or extensions. No electronic copies of any kind will be accepted.
+	The paper is due in hard copy at the beginning of class, and no later than {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/time_class_begins.txt}\unskip} on {\bf {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/date_design.txt}\unskip}}. This assignment covers material from the entire semester, up to {\bf {\color{red}Date}}. Turning it in before the due date is OK, but \emph{not} afterwards. {\bf Late papers will not be accepted, and will be graded with a 0}. There will \emph{not} be exceptions or extensions. No electronic copies of any kind will be accepted.
 	\\
 	\\
-	I encourage you to see me in my office hours \emph{before} the due date. If you want, \href{mailto:\filetext}{send me} your draft via email, then \href{https://calendly.com/bahamonde/officehours}{make an appointment}. That way I will be able to give you feedback on your work before the due date. If you want to receive comments from me, please allow plenty of time for me to read your draft, and time to meet you. Consider also that your classmates will do the same. Consequently, plan accordingly.
+	I encourage you to \href{https://calendly.com/bahamonde/officehours}{see me in my office hours} \emph{before} the due date. If you want, \href{mailto:\filetext}{send me} your draft via email, then \href{https://calendly.com/bahamonde/officehours}{make an appointment}. That way I will be able to give you feedback on your work before the due date. If you want to receive comments from me, please allow plenty of time for me to read your draft, and time to meet you. Consider also that your classmates will do the same. Consequently, plan accordingly.
 
 	% conference
 	\item {\bf One in-class mock-conference, \underline{{\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/date_conference.txt}\unskip}}}: {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/percentage_conference.txt}\unskip}\%. 
@@ -262,6 +300,16 @@ Upon successful completion of this course, you will be able to:
 
 
 
+\subsection*{Recitation}
+
+In this class there will be a \emph{mandatory} weakly recitation. This means that the TA not only will take attendance, but also, structure weekly sessions designed  to clarify further questions, or doubts you might have. Consequently, both your attendance \emph{and} active participation \emph{will} be graded. Failure to attend this mandatory recitation, and/or failure to engage with the weekly discussions, will impact negatively your participation grade. In other words, full attendance does not imply full credit. Consider also that the TA might give pop-up quizzes during recitation. You \emph{don't} want to miss those. 
+\\
+\\
+This is how it works. Every {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/recitation_day.txt}\unskip}, you will meet with {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/ta_name.txt}\unskip}. The TA will address the same readings. We believe that students benefit more when exposed to the same idea more than once. You may call this ``osmosis,'' or the process by which ideas are assimilated by repetition. Importantly, the TA might (or not) have a different lecturing style. Students should also benefit from instructors who take a different angle at the subject matter. 
+\\
+\\
+The TA will be available by email,\footnote{Please use your institutional email accounts only, i.e. \texttt{@uho.cl}.} and in-person only.\footnote{No meetings outside of the University's property are allowed.} Communication with the TA will be acceptable for academic reasons only. The TA will not share his/her cellphone number, nor engage in social media activities with the students.
+
 \subsection*{Disputing Grades}
 
 I am happy to go over any exam or paper with you. Request for re-grading, though, must be done in writing. Please refer to my \href{https://github.com/hbahamonde/hbahamonde.github.io/raw/master/resources/ReGrade_Policy.pdf}{re-grading policy}.
@@ -272,8 +320,8 @@ I am happy to go over any exam or paper with you. Request for re-grading, though
 Our university does not have (at the moment) an Office of Academic Integrity. Consequently, I will follow Tulane University's policy on Academic Integrity. In my class, you are expected to fully comply with that school's \href{https://college.tulane.edu/code-of-academic-conduct}{\texttt{policies}}. 
 
 
-%\subsection*{Students with Disabilities}
-%Students with disabilities who require accommodation should check with the \href{https://accessibility.tulane.edu/}{\texttt{Goldman Center for Student Accessibility}}.
+\subsection*{Students with Disabilities}
+In my class, {\bf ALL} are welcomed. Students with disabilities who require accommodation should check with the {\color{blue}Direccion de Asuntos Estudiantiles (DAE)}.
 
 
 \subsection*{Absence from Exams}
