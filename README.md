@@ -1,2 +1,3 @@
-# Social_Sciences_Epistemology_UGRAD
-This is my epistemology course (Ugrad)
+# Social Sciences and Epistemology (UGRAD)
+
+This is my epistemology course I teach at UOH (undergraduate level).
