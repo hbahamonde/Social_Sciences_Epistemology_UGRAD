@@ -1,0 +1,5 @@
+# Class 9: Causality
+
+- "**Systematic** features include indecisiveness in a parliamentary system or disaffection among minorities in a presidential one. **Non-systematic** features might include **the _sudden_ illness of a president that throws the government into chaos**. The latter event would not be a persistent feature of a presidential system; it would appear in one trial of the experiment but not in others"
+
+- "However, identifying the causal mechanisms requires causal inference, using the methods discussed below. That is, to demonstrate the causal status of each potential linkage in such a posited mechanism, the investigator would have to define and then estimate the causal effect underlying it. To portray an internally consistent causal mechanism requires using our more fundamental definition of causality offered in section 3.1 for each link in the chain of causal events." Ellos dicen que incluso si uno ocupa process tracing, aun hay que ocupar el marco de causal inference especificado en KKV.
