@@ -10,6 +10,8 @@
 
 ---
 
+- El texto se llama "mere description". Que quiere decir el autor con este titulo?
+
 - Contrafactual: "que hubiera sido si es que..."
 
 
