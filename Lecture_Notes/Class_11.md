@@ -5,6 +5,11 @@
 2. Thick description. Companera, "descripion densa."
 3. Mostrar estructura "this paper proceeds as follows" en paper de Abell.
 4. Recordar contestar la encuesta. Que no contesten la de Caro.
+5. Midterm:
+    - 25%
+    - proximo lunes.
+    - el miercoles haremos un repaso (ademas del texto)
+    - en ayudantia veran otro repaso tb.
 
 
 
@@ -20,7 +25,7 @@
 
 - "A case study, be it of an individual, a dyad, a group, or even a historical period, often implies repeated observations, usually organized longitudinally, on a single unit of analysis.
 
-- *Constant Conjunction*: WPDIA: "The philosopher David Hume used the phrase frequently in his discussion of the limits of empiricism to explain our ideas of causation and inference. In An Enquiry concerning Human Understanding and A Treatise of Human Nature Hume proposed that the origin of our knowledge of necessary connections arises out of observation of the constant conjunction of certain impressions across many instances."
+- *Constant Conjunction*: WPDIA: "The philosopher David Hume used the phrase frequently in his discussion of the limits of empiricism to explain our ideas of causation and inference. In An Enquiry concerning Human Understanding and A Treatise of Human Nature Hume proposed that **the origin of our knowledge of necessary connections arises out of observation of the constant conjunction of certain impressions across many instances**."
 
 - *Nomic*: from Greek, it means "law."
 
