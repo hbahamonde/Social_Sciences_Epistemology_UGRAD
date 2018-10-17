@@ -16,10 +16,9 @@ Second, all causally relevant variables must be identified prior to the analysis
 
 Third, cases that represent the full range of all logically and socially possible causal paths must be available for study.
 
-In the method of agreement, the investigator employs the logic of elimination
-to exclude as a candidate cause (independent variable) for the common outcome (dependent variable) in two or more cases those conditions that are not present in both cases. A cause or condition that survives this method of elimination can be regarded as possibly associated (“connected,” in Mill’s terminology) with the case outcome. An inherent weakness of this method of causal inference is that another case may be discovered later in which the same outcome is not associated with the variable that survived the elimination procedure in the comparison of the two earlier cases. 
+In the method of agreement, the investigator employs the logic of elimination to exclude as a candidate cause (independent variable) for the common outcome (dependent variable) in two or more cases those conditions that are not present in both cases. A cause or condition that survives this method of elimination can be regarded as possibly associated (“connected,” in Mill’s terminology) with the case outcome. An inherent weakness of this method of causal inference is that another case may be discovered later in which the same outcome is not associated with the variable that survived the elimination procedure in the comparison of the two earlier cases. 
 
-Thus, the possibil-ity remains that the common condition identified for the similar outcome in two cases may turn out to be a “false positive.”
+Thus, the possibility remains that the common condition identified for the similar outcome in two cases may turn out to be a “false positive.”
 
 
 In the method of difference—in which two cases having different outcomes
@@ -30,11 +29,9 @@ Hence, inferences in both methods of agreement and difference may be spurious an
 On the other hand, if a much larger number of independent variables are included, we may well encounter the problem of underdetermination (also known as “too many variables, too few cases”).
 
 
-This logic of causal inference for small-n comparisons is highly problematic if
-the phenomenon being investigated has complex, multiple determinants rather than—as in the simple examples of Mill’s methods discussed above—a single independent variable of presumed causal significance
+This logic of causal inference for small-n comparisons is highly problematic if the phenomenon being investigated has complex, multiple determinants rather than—as in the simple examples of Mill’s methods discussed above—a single independent variable of presumed causal significance
 
-Another major difficulty in employing the logic of elimination occurs when
-different instances of the phenomenon under investigation have alternative determinants—what Mill referred to as the problem of “plurality of causes.” This condition is termed “equifinality” in general systems theory and is also sometimes called “multiple causality.”
+Another major difficulty in employing the logic of elimination occurs when different instances of the phenomenon under investigation have alternative determinants—what Mill referred to as the problem of “plurality of causes.” This condition is termed “equifinality” in general systems theory and is also sometimes called “multiple causality.”
 
 With the method of agreement we cannot be certain that the outcome is associated only with a given independent variable. If that phenomenon is subject to plurality of causes, we may sooner or later encounter one or more additional cases in which the outcome occurs in the absence of the conditions with which it was earlier associated
 
