@@ -2,11 +2,12 @@
 
 ## Anuncios
 1. Pruebas, notas?
-2. ACCP
-3. Charla Javier Fuenzalida.
+2. pasar lista con grupos del trabakjo (OK). En algunos casos si se implementará.
+3. ACCP
+4. Charla Javier Fuenzalida.
     - ingeniero
     - como los experimentos resuelven el sesgo de seleccion? (diferencia con **datos observacionales**)
-2. Macarena Romero y Natalia Orellana?
+5. Macarena Romero y Natalia Orellana?
 
 
 
