@@ -11,6 +11,7 @@
 3. Este tema es pertinente en sociología, historia, economía, ciencia política, y adm. pública.
 4. Y tiene que ver con "el tiempo": cómo "la temporalidad", o "el paso del tiempo" cambia/afecta en gran medida los procesos sociales.
 5. Proxima clase tiene más sobre "temporalidad."
+6. Diego Astudillo: ayuda academia diplomatica.
 
 ## QWERTY
 
