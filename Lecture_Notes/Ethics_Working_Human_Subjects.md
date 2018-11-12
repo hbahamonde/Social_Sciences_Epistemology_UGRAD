@@ -2,8 +2,8 @@
 
 1. Rosa Cerda's "Town Hall": Coordinadora del Programa de Inglés viene a escuchar los problemas referentes a Ingles II.
 2. Como van los trabajos grupales?
-3. Proximo semestre: fijarse en los horarios y plazos para botar los ramos.
-4. Infraestructura: los profesores tienen un mecanismo para poder solucionar los problemas de ruido (me avisas, yo llamo a la Jefa de Infrastructura).
+3. **Proximo semestre: fijarse en los horarios y plazos para botar los ramos**.
+4. **Infraestructura**: los profesores tienen un mecanismo para poder solucionar los problemas de ruido (me avisas, yo llamo a la Jefa de Infrastructura).
 5. Asignar ciertos miércoles para poder hacer "concejo de curso"?
 6. Ya hemos terminado con asuntos de la temporalidad, y comenzamos con metodos de "trabajo de campo."
     1. "Hacer campo" (fieldwork).
