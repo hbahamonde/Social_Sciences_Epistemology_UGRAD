@@ -9,3 +9,5 @@ latexmk -pdf -cd /Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology
 latexmk -pdf -cd /Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/Tests/Midterm.tex
 
 latexmk -pdf -cd /Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/Tests/Final.tex
+
+latexmk -pdf -cd /Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/Design/Design_Check_List.tex
