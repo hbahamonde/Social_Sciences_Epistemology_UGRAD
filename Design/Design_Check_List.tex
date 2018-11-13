@@ -1,0 +1,250 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=true,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=blue,          % color of internal links (change box color with linkbordercolor)
+    citecolor=blue,        % color of links to bibliography
+    filecolor=blue,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+
+
+\usepackage{geometry}
+\usepackage{import} % To import email.
+\usepackage{marvosym} % face package
+\usepackage{xcolor,color}
+ \usepackage{fontawesome}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Research Design$'$s Checklist}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+% \href{http://www.hectorbahamonde.com}{www.HectorBahamonde.com}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  %pdfkeywords = {political science, epistemology},
+  %pdftitle = {\name: Syllabus},
+  %pdfsubject = {Syllabus},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{{\tiny \name}}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+
+% email input begin
+\newread\fid
+\newcommand{\readfile}[1]% #1 = filename
+{\bgroup
+  \endlinechar=-1
+  \openin\fid=#1
+  \read\fid to\filetext
+  \loop\ifx\empty\filetext\relax% skip over comments
+    \read\fid to\filetext
+  \repeat
+  \closein\fid
+  \global\let\filetext=\filetext
+\egroup}
+\readfile{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/email.txt}
+% email input end
+
+
+%%% bib begin
+\usepackage[american]{babel}
+\usepackage{csquotes}
+%\usepackage[style=chicago-authordate,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+
+\usepackage[authordate,isbn=false,doi=false,url=false,eprint=false]{biblatex-chicago}
+\DeclareFieldFormat[article]{title}{\mkbibquote{#1}} % make article titles in quotes
+\DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}} % make theses italics
+
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}}
+
+\addbibresource{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/library.bib} 
+\addbibresource{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/Bahamonde_BibTex2013.bib} 
+
+% USAGES
+%% use \textcite to cite normal
+%% \parencite to cite in parentheses
+%% \footcite to cite in footnote
+%% the default can be modified in autocite=FOO, footnote, for ex. 
+%%% bib end
+
+
+
+
+\begin{document}
+
+% Place name at left
+%{\huge \name}
+
+% Alternatively, print name centered and bold:
+\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+ Universidad de O$'$Higgins \\
+  Instituto de Ciencias Sociales \\
+  Rancagua, Chile\\
+  \\
+  \\
+
+\end{minipage}
+\hspace{4cm}\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+{\bf Last updated}: \today. \\
+ {\bf Download last version} \href{https://github.com/hbahamonde/Social_Sciences_Epistemology_UGRAD/raw/master/Bahamonde_Social_Sciences_Epistemology_UGRAD_Syllabus.pdf}{here}.%\\
+   %{\bf {\color{red}{\scriptsize Not intended as a definitive version}}} %\\
+    \\
+    \\
+    \\
+    \\
+    \\
+  \end{tabular}
+\end{minipage}
+
+\vspace{-5mm}
+{\bf Professor}: Hector Bahamonde, PhD.\\
+%\texttt{e:}\href{mailto:hbahamonde@tulane.edu}{\texttt{hbahamonde@tulane.edu}}\\
+\texttt{e:}\href{mailto:hector.bahamonde@uoh.cl}{\texttt{hector.bahamonde@uoh.cl}}\\
+\texttt{w:}\href{http://www.hectorbahamonde.com}{\texttt{www.hectorbahamonde.com}}\\
+{\bf Office Hours}: Make an appointment \href{https://calendly.com/bahamonde/officehours}{\texttt{here}}.\\
+
+\vspace{1mm}
+{\bf Research Design Due}: {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/date_design.txt}\unskip}.\\
+{\bf Mock Conference}: {\input{/Users/hectorbahamonde/RU/Teaching/Social_Sciences_Epistemology_UGRAD/date_conference.txt}\unskip}.
+
+
+
+\subsection*{Secciones del Trabajo}
+
+\begin{enumerate}
+	\item {\bf T\'itulo}.
+	\item {\bf Pregunta de investigaci\'on}: dependiendo del tema/pregunta del \emph{paper}, la forma de plantear la pregunta ser\'a distinta. Recuerda las diferencias entre \emph{las causas de los efectos}, y los \emph{efectos de las causas}. Por ejemplo, habr\'a estudios de car\'acter {\bf exploratorios}. En estos estudios, no hay una hip\'otesis tan clara. Aqu\'i el trabajo de campo apunta a recabar m\'as informaci\'on. Los estudios {\bf confirmatorios} apuntan a medir los efectos de ciertas causas. Un ejemplo del primer tipo ser\'ia \emph{Cu\'al es la visi\'on de la clase pol\'itica acerca de los estudiantes universitarios?}, mientras que un ejemplo del segundo tipo ser\'ia \emph{Cual es el efecto de la ``izquierdizaci\'on'' del estudiantado en la percepci\'on de la clase pol\'itica?} Finalmente, la pregunta de investigaci'on debe ser concisa, utilizar un lenguaje claro y sencillo. Ojal\'a corto y directo. La pregunta tambi\'en debe ser ``realizable'', es decir que debe ser posible de responder a trav\'es de los datos que se puedan recopilar. Tambi\'en debe ser relevante y novedosa. Ojal\'a aportando algo nuevo a la literatura.\\
+
+
+{\bf Ejemplos}
+
+\begin{itemize}
+	\item[-] Preguntarse por una o varias {\bf causas del problema}.  \emph{¿Por qu\'e el nivel de felicidad de los estudiantes de Administraci\'on P\'ublica de la Universidad de O$'$Higgins es tan alto?}
+	\item[-] Preguntarse por las {\bf consecuencias del problema}. \emph{¿C\'omo afecta el alto nivel de felicidad de los estudiantes de Administraci\'on P\'ublica de la Universidad de O$'$Higgins al gasto en salud de los mismos estudiantes?}
+	\item[-] Pensar una {\bf soluci\'on al problema}. Preguntarse qu\'e suceder\'ia si aplicamos cierta soluci\'on al problema delimitado, o c\'omo afectar\'ia una acci\'on al problema o asunto. \emph{¿Si se aplicaran pol\'iticas de deporte y vida sana, se reducir\'ian los \'indices de felicidad de los estudiantes de Administraci\'on P\'ublica de la Universidad de O$'$Higgins?}
+	
+	\item[-] Preguntarse {\bf si el problema o asunto sucede en otro lugar y preguntarse por qu\'e o qu\'e consecuencias tiene}. De esta manera formulamos preguntas de investigaci\'on para una {\bf investigaci\'on comparativa}. \emph{¿Hay diferentes niveles de felicidad de los estudiantes de Administraci\'on P\'ublica de la Universidad de O$'$Higgins dependiendo si su comuna es urbana o rural?} 
+	
+	\item[-] Preguntarse {\bf si el problema o asunto actual suced\'ia antes}, o si el problema o asunto pasado {\bf sucede hoy en d\'ia}. \emph{¿El alto nivel de felicidad de los estudiantes de Administraci\'on P\'ublica de la Universidad de O$'$Higgins ha sido una constante en los \'ultimos a\~nos?}
+	\end{itemize}
+
+
+\item {\bf Objetivo de la Investigaci\'on}: Independiente del tipo de pregunta/estudio, hay caracter\'sticas que se deben cumplir siempre. El objetivo de investigaci\'on siempre se redacta en infinitivo, por ejemplo, ``Objetivo: \emph{Identificar} las causas del alto nivel de felicidad de los estudiantes de Administraci\'on P\'ublica de la Universidad de O$'$Higgins''.
+
+\item {\bf Motivaci\'on}: Por qu\'e se debe hacer esta investigaci\'on? Aqu\'i pueden haber varias alternativas. Vean cu\'al calza m\'as con su trabajo.
+
+\begin{itemize}
+	\item[-] {\bf La literatura ha fallado en abordar el tema}. Para esto, realizar una revisi\'on de la literatura relevante, identificando las principales corrientes e hip\'otesis disponibles sobre el tema que se quiere analizar. ¿C\'omo ha sido abordado el problema o pregunta por otros autores? ¿Cu\'al es el estado del arte acerca del problema? ¿Cual es el d\'eficit que la literatura presenta?
+
+	\item[-] {\bf Curiosidad de los investigadores}. En general, los estudios exploratorios parten de cierta observaci\'on de la realidad que resulta ser (1) interesante (\emph{nadie ha estudiado este tema, a pesar de ser de suma relevancia para nuestra sociedad}), (2) intrigante (\emph{se ha producido un nuevo fen\'omeno, cuyos efectos aun no han sido explicados con claridad}), (3) contradictoria (\emph{se supone que esto deber\'ia ser as\'i, pero no}).
+
+\end{itemize}
+
+\item {\bf Hip\'otesis}: en una s\'ola oraci\'on, especificar qu\'e es lo que esperan encontrar. Sin embargo, los estudios de corte m\'as exploratorio, no siempre presentan una hip\'otesis.
+
+\item{\bf M\'etodos}: presentar los tres m\'etodos a utilizar. Para esto deben (1) {\bf explicar} en qu\'e consiste cada uno (usando la literatura le\'ida en clases), (2) {\bf justificar} por qu\'e esos m\'etodos son los m\'as adecuados para estudiar el problema, (3) {\bf explicar qu\'e m\'etodos van a implementar}, y por qu\'e (explicando tambi\'en por qu\'e han decidido dejar para futuras investigaciones los m\'etodos que no van a implementar).
+
+
+\item {\bf An\'alisis de Datos}: ¿Qu\'e pudimos aprender de los m\'etodos implementados? En esta secci\'on deben presentar las grandes conclusiones que resulten de los datos analizados. Este es el momento ideal para poder presentar de manera creativa (tablas, gr\'aficos, citas relevantes de entrevistas/an\'alisis de prensa) informaci\'on relevante para poder responder la pregunta de investigaci\'on (o iluminar en algo el problema, en el caso de los estudios exploratorios).
+
+\item {\bf Discussi\'on/Conclusi\'on}: Breve resumen del trabajo. Discutir cuestiones pendientes, y nombrar recomendaciones para futuros trabajos, y/o describir ciertas dificultados o lecciones aprendidas durante el trabajo de campo.
+
+
+\end{enumerate}
+
+
+
+
+
+\subsection*{Tener en Cuenta}
+
+Ustedes tambi\'en ser\'an evaluados por c\'omo saben (o no) realizar las siguientes actividades:
+
+\begin{enumerate}
+	\item {\bf Definir \emph{todos} los conceptos utilizados}. Si hablan de ``democracia,'' qu\'e se entiende por ese concepto? Utilicen los papers relevantes discutidos en clases.
+	\item {\bf Identificar las unidades de inferencia}. Si el \emph{universo} es ``la sociedad de Rancagua,'' cu\'al es la \emph{muestra}, o los casos seleccionados, y por qu\'e?
+	\item {\bf Definir la variable dependiente}. \emph{Qu\'e quieren explicar?}
+	\item {\bf Definir la variable independiente}. \emph{C\'omo explican lo que quieren explicar?} Esto puede ser omitido en estudios de corte exploratorio.
+	\item {\bf Especificar los mecanismos causales}. \emph{C\'omo se conecta X con Y?} Esto puede ser omitido en estudios exploratorios.
+	\item {\bf Definici\'on de la hip\'otesis}. \emph{Cu\'al es la respuesta a la pregunta?} En esta parte, ustedes tambi\'en deben presentar hip\'otesis alternativas/rivales (i.e. ``experimentos cruciales''). Los estudios exploratorios no siempre tienen hip\'otesis. 
+	\item Tipo de dise\~no de investigaci\'on seleccionado y justificaci\'on. \emph{Cuantitativo? Cualitativo?} Y \emph{por qu\'e?}
+	\item Discusi\'on de los principales ventajas/desventajas de los m\'etodos implementados. \emph{Qu\'e ganan y qu\'e pierden al implementar ese m\'etodo?}
+\end{enumerate}
+
+
+
+\end{document}
+
+
